@@ -17,7 +17,7 @@ No GNSS, LiDAR, IMU or ground truth at inference.
 
 ## Team
 
-Kende Daniel Rethelyi · Mohamed Lebdah · Tim Roth · Jonas Klupsch
+Tim Roth · Mohamed Lebdah · Kende Daniel Rethelyi · Rohel Shrestha · Jonas Klupsch
 
 ## Results at a glance
 
