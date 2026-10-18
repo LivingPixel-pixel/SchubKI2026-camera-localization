@@ -79,4 +79,5 @@ class TrackOdometry:
         ang = centres / self.L.lap * 2 * math.pi
         s0 = (math.atan2((np.sin(ang) * w).sum(), (np.cos(ang) * w).sum()) / (2 * math.pi) * self.L.lap) % self.L.lap
         xy, yaw = self.L.at(s0 + self.travel)
+        self.confidence = float(w.sum() / max(self.hist.sum(), 1e-9))  # share of votes behind the emitted offset
         return xy, yaw

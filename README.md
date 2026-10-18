@@ -56,7 +56,7 @@ Every pose uses only images and speed up to its own timestamp.
 - Under this domain shift pure retrieval jumps between similar straights, so the submitted test poses use the
   **track-odometry** variant (validation 1.97-2.64 m, lateral 1.26-1.35 m), which stays continuous.
 - 739/739 frames emitted (100 % coverage), no first pose used.
-- File: [`results/test_poses.csv`](results/test_poses.csv), run metadata: [`results/test_poses.run.json`](results/test_poses.run.json).
+- File: [`results/test_poses.csv`](results/test_poses.csv) with columns `timestamp,x,y,yaw,confidence,status` (timestamp = image header stamp in ns, track frame; confidence = share of retrieval votes behind the emitted lap position, scaled to 0-1; status `lost` when that share is below 5 %). Same poses in the official scorer format: [`results/test_poses_scorer_format.csv`](results/test_poses_scorer_format.csv). Run metadata: [`results/test_poses.run.json`](results/test_poses.run.json).
 
 </td></tr></table>
 

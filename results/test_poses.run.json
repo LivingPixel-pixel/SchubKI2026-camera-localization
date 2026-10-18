@@ -11,5 +11,5 @@
   "initial_pose": null,
   "device": "privateuseone:0",
   "method": "ViT-B/16 retrieval votes start offset s0; car-state speed integrates arc length; pose on racing line (track_odometry.py)",
-  "tracker_ms_per_frame": 0.5127637348098728
+  "tracker_ms_per_frame": 0.5702972935899558
 }
