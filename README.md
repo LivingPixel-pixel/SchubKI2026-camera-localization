@@ -15,6 +15,10 @@ No GNSS, LiDAR, IMU or ground truth at inference.
 
 </div>
 
+## Team
+
+Kende Daniel Rethelyi · Mohamed Lebdah · Tim Roth · Jonas Klupsch
+
 ## Results at a glance
 
 | | Position RMSE | Lateral RMSE | Heading RMSE | Within 1 m | Coverage | Runtime |
