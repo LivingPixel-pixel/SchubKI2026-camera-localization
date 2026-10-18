@@ -1,0 +1,27 @@
+{
+  "hardware": {
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "AMD64 Family 26 Model 96 Stepping 0, AuthenticAMD",
+    "python": "3.12.14"
+  },
+  "gallery_images": 8269,
+  "validation": {
+    "6": {
+      "frames": 1205,
+      "modes": {
+        "match": 1205
+      },
+      "filter_ms_per_frame": 0.9644969294516222,
+      "csv": "results\\validation_lap6_poses.csv"
+    },
+    "7": {
+      "frames": 1095,
+      "modes": {
+        "match": 1095
+      },
+      "filter_ms_per_frame": 0.7688063013443902,
+      "csv": "results\\validation_lap7_poses.csv"
+    }
+  },
+  "encode_ms_per_frame": 77.56158678372078
+}

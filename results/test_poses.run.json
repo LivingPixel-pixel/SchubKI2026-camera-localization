@@ -1,0 +1,15 @@
+{
+  "hardware": {
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "AMD64 Family 26 Model 96 Stepping 0, AuthenticAMD",
+    "python": "3.12.14"
+  },
+  "gallery_images": 8269,
+  "frames": 739,
+  "encode_ms_per_frame": 75.01611165508228,
+  "filter_ms_per_frame": 0.5530156968640357,
+  "initial_pose": null,
+  "device": "privateuseone:0",
+  "method": "ViT-B/16 retrieval votes start offset s0; car-state speed integrates arc length; pose on racing line (track_odometry.py)",
+  "tracker_ms_per_frame": 0.5127637348098728
+}
