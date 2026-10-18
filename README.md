@@ -7,7 +7,7 @@
 Causal 10 Hz pose estimation (x, y, yaw) from onboard camera images, the track map and car-state speed.<br>
 No GNSS, LiDAR, IMU or ground truth at inference.
 
-**[Slides (PDF, 6)](docs/slides.pdf)** · **[Video (under 5 min)](docs/demo_video.mp4)** · **[Test poses](results/test_poses.csv)** · **[Validation scores](results/)** · **[Model weights](https://github.com/LivingPixel-pixel/SchubKI2026-camera-localization/releases/tag/v1.0-submission)**
+**[Slides (PDF, 6)](docs/slides.pdf)** · **[Video (3:29)](docs/demo_video.mp4)** · **[Test poses](results/test_poses.csv)** · **[Validation scores](results/)** · **[Model weights](https://github.com/LivingPixel-pixel/SchubKI2026-camera-localization/releases/tag/v1.0-submission)**
 
 <img src="docs/media/validation_lap6.gif" width="900" alt="Best model on validation lap 6: estimate (orange) vs ground truth (green) with running error">
 
