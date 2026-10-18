@@ -42,7 +42,8 @@ was selected for the test because it stays continuous (see `results/trajectory_t
 ```powershell
 python -m pip install -r requirements.txt
 # put inference-best.pt (release asset) and gallery-laps1-5.npz into models/vit7750/
-python localizer/build_gallery.py TRAIN.mcap models/vit7750/gallery-laps1-5.npz   # rebuild gallery from the raw training run
+python DATASET/tools/extract_gt.py TRAIN_DIR gt.csv                               # official starter kit
+python localizer/build_gallery.py TRAIN.mcap gt.csv models/vit7750/gallery-laps1-5.npz   # rebuild gallery (laps 1-5)
 .\run_submission.ps1 -Mcap TEST.mcap -Map map.mcap        # Linux: ./run_submission.sh TEST.mcap map.mcap
 ```
 
@@ -64,3 +65,4 @@ run the trackers, `localizer/score_and_plot.py` calls the official scorer and dr
 Pre-trained: torchvision ViT-B/16 ImageNet-1k weights (BSD-3). Libraries: PyTorch, torchvision, torch-directml, NumPy,
 Pillow, mcap, matplotlib. Data: Constructor Labs hackathon dataset only (not redistributed here). AI tools: OpenAI Codex,
 Kiro (Claude) for code generation and review; the team is responsible for the result. Code: MIT (see LICENSE).
+
