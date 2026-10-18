@@ -56,6 +56,15 @@ Every pose uses only images and speed up to its own timestamp.
 
 </td></tr></table>
 
+## Latest team result: wide-view 5-crop matching (not yet in the submitted poses)
+
+Same step-7750 weights, inference only: each frame is encoded as 5 overlapping crops across the full image width, and
+similarity is the best mean crop cosine over horizontal shifts of -2..2 crops, which absorbs yaw and lateral offset.
+On the lap-3 retrieval benchmark (gallery laps 1-2, 1,236 queries) Recall@1 rose from **822 to 888 (66.5 % to 71.8 %)**,
+Recall@5 from 901 to 956, and distant false matches fell from 53 to 40.
+These are retrieval proxies chosen among about 16 variants on lap 3, not official pose scores. It costs 5 encoder passes per
+frame, so it was not integrated into the real-time pipeline before the deadline. Details: [docs/VIT_MULTICROP_MATCHING.md](docs/VIT_MULTICROP_MATCHING.md),
+code: [`training/backend/tools/eval_vit_multicrop.py`](training/backend/tools/eval_vit_multicrop.py) (CUDA).
 ## Reproduce
 
 The competition data is licensed for the hackathon only, so it is **not** in this repository. Point the scripts at your copy of the dataset:
